@@ -157,6 +157,7 @@ def dhcprun():
                 else:
                     commands.append("network-boot server-name " +
                                     dhcpconfigs[key][inkey] + "\n")
+        commands.append("exit\n")
     commands.append("commit best\n")
 
     scrollbar1.pack(side="right", fill="y")
